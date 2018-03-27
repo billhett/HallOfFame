@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A97FA2AE206ADA6300B53316 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FA2AD206ADA6300B53316 /* AppDelegate.swift */; };
+		A97FA2B0206ADA6300B53316 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FA2AF206ADA6300B53316 /* ViewController.swift */; };
+		A97FA2B3206ADA6300B53316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97FA2B1206ADA6300B53316 /* Main.storyboard */; };
+		A97FA2B5206ADA6300B53316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97FA2B4206ADA6300B53316 /* Assets.xcassets */; };
+		A97FA2B8206ADA6400B53316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97FA2B6206ADA6300B53316 /* LaunchScreen.storyboard */; };
+		A97FA2BD206ADA6400B53316 /* HallOfFame WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A97FA2BC206ADA6400B53316 /* HallOfFame WatchKit App.app */; };
+		A97FA2C3206ADA6400B53316 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97FA2C1206ADA6400B53316 /* Interface.storyboard */; };
+		A97FA2C5206ADA6400B53316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97FA2C4206ADA6400B53316 /* Assets.xcassets */; };
+		A97FA2CC206ADA6400B53316 /* HallOfFame WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A97FA2CB206ADA6400B53316 /* HallOfFame WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A97FA2D1206ADA6400B53316 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FA2D0206ADA6400B53316 /* InterfaceController.swift */; };
+		A97FA2D3206ADA6400B53316 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FA2D2206ADA6400B53316 /* ExtensionDelegate.swift */; };
+		A97FA2D5206ADA6400B53316 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FA2D4206ADA6400B53316 /* NotificationController.swift */; };
+		A97FA2D7206ADA6400B53316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97FA2D6206ADA6400B53316 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A97FA2BE206ADA6400B53316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A97FA2A2206ADA6300B53316 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A97FA2BB206ADA6400B53316;
+			remoteInfo = "HallOfFame WatchKit App";
+		};
+		A97FA2CD206ADA6400B53316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A97FA2A2206ADA6300B53316 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A97FA2CA206ADA6400B53316;
+			remoteInfo = "HallOfFame WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A97FA2DF206ADA6400B53316 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A97FA2CC206ADA6400B53316 /* HallOfFame WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97FA2E3206ADA6400B53316 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A97FA2BD206ADA6400B53316 /* HallOfFame WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A97FA2AA206ADA6300B53316 /* HallOfFame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HallOfFame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97FA2AD206ADA6300B53316 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A97FA2AF206ADA6300B53316 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A97FA2B2206ADA6300B53316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A97FA2B4206ADA6300B53316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A97FA2B7206ADA6300B53316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A97FA2B9206ADA6400B53316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97FA2BC206ADA6400B53316 /* HallOfFame WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HallOfFame WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97FA2C2206ADA6400B53316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A97FA2C4206ADA6400B53316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A97FA2C6206ADA6400B53316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97FA2CB206ADA6400B53316 /* HallOfFame WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HallOfFame WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97FA2D0206ADA6400B53316 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A97FA2D2206ADA6400B53316 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A97FA2D4206ADA6400B53316 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A97FA2D6206ADA6400B53316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A97FA2D8206ADA6400B53316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A97FA2D9206ADA6400B53316 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A97FA2A7206ADA6300B53316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97FA2C8206ADA6400B53316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A97FA2A1206ADA6300B53316 = {
+			isa = PBXGroup;
+			children = (
+				A97FA2AC206ADA6300B53316 /* HallOfFame */,
+				A97FA2C0206ADA6400B53316 /* HallOfFame WatchKit App */,
+				A97FA2CF206ADA6400B53316 /* HallOfFame WatchKit Extension */,
+				A97FA2AB206ADA6300B53316 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A97FA2AB206ADA6300B53316 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A97FA2AA206ADA6300B53316 /* HallOfFame.app */,
+				A97FA2BC206ADA6400B53316 /* HallOfFame WatchKit App.app */,
+				A97FA2CB206ADA6400B53316 /* HallOfFame WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A97FA2AC206ADA6300B53316 /* HallOfFame */ = {
+			isa = PBXGroup;
+			children = (
+				A97FA2AD206ADA6300B53316 /* AppDelegate.swift */,
+				A97FA2AF206ADA6300B53316 /* ViewController.swift */,
+				A97FA2B1206ADA6300B53316 /* Main.storyboard */,
+				A97FA2B4206ADA6300B53316 /* Assets.xcassets */,
+				A97FA2B6206ADA6300B53316 /* LaunchScreen.storyboard */,
+				A97FA2B9206ADA6400B53316 /* Info.plist */,
+			);
+			path = HallOfFame;
+			sourceTree = "<group>";
+		};
+		A97FA2C0206ADA6400B53316 /* HallOfFame WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A97FA2C1206ADA6400B53316 /* Interface.storyboard */,
+				A97FA2C4206ADA6400B53316 /* Assets.xcassets */,
+				A97FA2C6206ADA6400B53316 /* Info.plist */,
+			);
+			path = "HallOfFame WatchKit App";
+			sourceTree = "<group>";
+		};
+		A97FA2CF206ADA6400B53316 /* HallOfFame WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A97FA2D0206ADA6400B53316 /* InterfaceController.swift */,
+				A97FA2D2206ADA6400B53316 /* ExtensionDelegate.swift */,
+				A97FA2D4206ADA6400B53316 /* NotificationController.swift */,
+				A97FA2D6206ADA6400B53316 /* Assets.xcassets */,
+				A97FA2D8206ADA6400B53316 /* Info.plist */,
+				A97FA2D9206ADA6400B53316 /* PushNotificationPayload.apns */,
+			);
+			path = "HallOfFame WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A97FA2A9206ADA6300B53316 /* HallOfFame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97FA2E4206ADA6400B53316 /* Build configuration list for PBXNativeTarget "HallOfFame" */;
+			buildPhases = (
+				A97FA2A6206ADA6300B53316 /* Sources */,
+				A97FA2A7206ADA6300B53316 /* Frameworks */,
+				A97FA2A8206ADA6300B53316 /* Resources */,
+				A97FA2E3206ADA6400B53316 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A97FA2BF206ADA6400B53316 /* PBXTargetDependency */,
+			);
+			name = HallOfFame;
+			productName = HallOfFame;
+			productReference = A97FA2AA206ADA6300B53316 /* HallOfFame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A97FA2BB206ADA6400B53316 /* HallOfFame WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97FA2E0206ADA6400B53316 /* Build configuration list for PBXNativeTarget "HallOfFame WatchKit App" */;
+			buildPhases = (
+				A97FA2BA206ADA6400B53316 /* Resources */,
+				A97FA2DF206ADA6400B53316 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A97FA2CE206ADA6400B53316 /* PBXTargetDependency */,
+			);
+			name = "HallOfFame WatchKit App";
+			productName = "HallOfFame WatchKit App";
+			productReference = A97FA2BC206ADA6400B53316 /* HallOfFame WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A97FA2CA206ADA6400B53316 /* HallOfFame WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A97FA2DC206ADA6400B53316 /* Build configuration list for PBXNativeTarget "HallOfFame WatchKit Extension" */;
+			buildPhases = (
+				A97FA2C7206ADA6400B53316 /* Sources */,
+				A97FA2C8206ADA6400B53316 /* Frameworks */,
+				A97FA2C9206ADA6400B53316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HallOfFame WatchKit Extension";
+			productName = "HallOfFame WatchKit Extension";
+			productReference = A97FA2CB206ADA6400B53316 /* HallOfFame WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A97FA2A2206ADA6300B53316 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "William Hettinger";
+				TargetAttributes = {
+					A97FA2A9206ADA6300B53316 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A97FA2BB206ADA6400B53316 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A97FA2CA206ADA6400B53316 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A97FA2A5206ADA6300B53316 /* Build configuration list for PBXProject "HallOfFame" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A97FA2A1206ADA6300B53316;
+			productRefGroup = A97FA2AB206ADA6300B53316 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A97FA2A9206ADA6300B53316 /* HallOfFame */,
+				A97FA2BB206ADA6400B53316 /* HallOfFame WatchKit App */,
+				A97FA2CA206ADA6400B53316 /* HallOfFame WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A97FA2A8206ADA6300B53316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97FA2B8206ADA6400B53316 /* LaunchScreen.storyboard in Resources */,
+				A97FA2B5206ADA6300B53316 /* Assets.xcassets in Resources */,
+				A97FA2B3206ADA6300B53316 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97FA2BA206ADA6400B53316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97FA2C5206ADA6400B53316 /* Assets.xcassets in Resources */,
+				A97FA2C3206ADA6400B53316 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97FA2C9206ADA6400B53316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97FA2D7206ADA6400B53316 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A97FA2A6206ADA6300B53316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97FA2B0206ADA6300B53316 /* ViewController.swift in Sources */,
+				A97FA2AE206ADA6300B53316 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A97FA2C7206ADA6400B53316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97FA2D5206ADA6400B53316 /* NotificationController.swift in Sources */,
+				A97FA2D3206ADA6400B53316 /* ExtensionDelegate.swift in Sources */,
+				A97FA2D1206ADA6400B53316 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A97FA2BF206ADA6400B53316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A97FA2BB206ADA6400B53316 /* HallOfFame WatchKit App */;
+			targetProxy = A97FA2BE206ADA6400B53316 /* PBXContainerItemProxy */;
+		};
+		A97FA2CE206ADA6400B53316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A97FA2CA206ADA6400B53316 /* HallOfFame WatchKit Extension */;
+			targetProxy = A97FA2CD206ADA6400B53316 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A97FA2B1206ADA6300B53316 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97FA2B2206ADA6300B53316 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A97FA2B6206ADA6300B53316 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97FA2B7206ADA6300B53316 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A97FA2C1206ADA6400B53316 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97FA2C2206ADA6400B53316 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A97FA2DA206ADA6400B53316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A97FA2DB206ADA6400B53316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A97FA2DD206ADA6400B53316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8U3S3YV7;
+				INFOPLIST_FILE = "HallOfFame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamhettinger.HallOfFame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		A97FA2DE206ADA6400B53316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8U3S3YV7;
+				INFOPLIST_FILE = "HallOfFame WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamhettinger.HallOfFame.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		A97FA2E1206ADA6400B53316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8U3S3YV7;
+				IBSC_MODULE = HallOfFame_WatchKit_Extension;
+				INFOPLIST_FILE = "HallOfFame WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamhettinger.HallOfFame.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		A97FA2E2206ADA6400B53316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8U3S3YV7;
+				IBSC_MODULE = HallOfFame_WatchKit_Extension;
+				INFOPLIST_FILE = "HallOfFame WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamhettinger.HallOfFame.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		A97FA2E5206ADA6400B53316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8U3S3YV7;
+				INFOPLIST_FILE = HallOfFame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamhettinger.HallOfFame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A97FA2E6206ADA6400B53316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G8U3S3YV7;
+				INFOPLIST_FILE = HallOfFame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamhettinger.HallOfFame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A97FA2A5206ADA6300B53316 /* Build configuration list for PBXProject "HallOfFame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97FA2DA206ADA6400B53316 /* Debug */,
+				A97FA2DB206ADA6400B53316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97FA2DC206ADA6400B53316 /* Build configuration list for PBXNativeTarget "HallOfFame WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97FA2DD206ADA6400B53316 /* Debug */,
+				A97FA2DE206ADA6400B53316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97FA2E0206ADA6400B53316 /* Build configuration list for PBXNativeTarget "HallOfFame WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97FA2E1206ADA6400B53316 /* Debug */,
+				A97FA2E2206ADA6400B53316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A97FA2E4206ADA6400B53316 /* Build configuration list for PBXNativeTarget "HallOfFame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A97FA2E5206ADA6400B53316 /* Debug */,
+				A97FA2E6206ADA6400B53316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A97FA2A2206ADA6300B53316 /* Project object */;
+}
