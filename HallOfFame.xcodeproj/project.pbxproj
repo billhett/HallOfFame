@@ -22,6 +22,7 @@
 		A97FA2D7206ADA6400B53316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97FA2D6206ADA6400B53316 /* Assets.xcassets */; };
 		A97FA2EA206ADD0700B53316 /* PlayerRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FA2E9206ADD0700B53316 /* PlayerRowController.swift */; };
 		A97FA2EC206AE11800B53316 /* BasketballPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FA2EB206AE11800B53316 /* BasketballPlayer.swift */; };
+		A97FA2F0206C2BC700B53316 /* PlayerDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97FA2EF206C2BC700B53316 /* PlayerDetailInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		A97FA2D9206ADA6400B53316 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A97FA2E9206ADD0700B53316 /* PlayerRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRowController.swift; sourceTree = "<group>"; };
 		A97FA2EB206AE11800B53316 /* BasketballPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballPlayer.swift; sourceTree = "<group>"; };
+		A97FA2EF206C2BC700B53316 /* PlayerDetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			children = (
 				A97FA2D0206ADA6400B53316 /* InterfaceController.swift */,
 				A97FA2E9206ADD0700B53316 /* PlayerRowController.swift */,
+				A97FA2EF206C2BC700B53316 /* PlayerDetailInterfaceController.swift */,
 				A97FA2EB206AE11800B53316 /* BasketballPlayer.swift */,
 				A97FA2D2206ADA6400B53316 /* ExtensionDelegate.swift */,
 				A97FA2D4206ADA6400B53316 /* NotificationController.swift */,
@@ -312,6 +315,7 @@
 				A97FA2D5206ADA6400B53316 /* NotificationController.swift in Sources */,
 				A97FA2EA206ADD0700B53316 /* PlayerRowController.swift in Sources */,
 				A97FA2D3206ADA6400B53316 /* ExtensionDelegate.swift in Sources */,
+				A97FA2F0206C2BC700B53316 /* PlayerDetailInterfaceController.swift in Sources */,
 				A97FA2D1206ADA6400B53316 /* InterfaceController.swift in Sources */,
 				A97FA2EC206AE11800B53316 /* BasketballPlayer.swift in Sources */,
 			);

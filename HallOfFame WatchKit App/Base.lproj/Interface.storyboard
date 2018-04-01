@@ -14,13 +14,18 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HallOfFame_WatchKit_Extension">
                     <items>
+                        <label width="1" alignment="left" text="Hall of Fame" textAlignment="center" id="U2g-HV-nTH">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
                         <table alignment="left" id="ZYQ-44-ytz">
                             <items>
                                 <tableRow identifier="PlayerRow" id="mZo-Y9-SPK" customClass="PlayerRowController" customModule="HallOfFame_WatchKit_Extension">
-                                    <group key="rootItem" width="1" alignment="left" id="8Hr-a5-6pI">
+                                    <group key="rootItem" width="1" height="50" alignment="left" id="8Hr-a5-6pI">
                                         <items>
-                                            <imageView width="0.29999999999999999" alignment="left" id="sVa-oM-DDv"/>
-                                            <label width="0.69999999999999996" height="1" alignment="left" text="Label" id="uBB-3U-BUj"/>
+                                            <imageView width="0.40000000000000002" height="50" alignment="left" image="damian" contentMode="scaleAspectFit" id="sVa-oM-DDv"/>
+                                            <label width="0.59999999999999998" height="50" alignment="left" text="Damian Rasheed" numberOfLines="0" id="uBB-3U-BUj">
+                                                <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            </label>
                                         </items>
                                     </group>
                                     <connections>
@@ -37,6 +42,33 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--PlayerDetailController-->
+        <scene sceneID="WhE-pc-NM3">
+            <objects>
+                <controller identifier="PlayerDetailController" id="x3d-j7-AmM" customClass="PlayerDetailInterfaceController" customModule="HallOfFame_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="Name" textAlignment="center" id="l60-Tu-RoW"/>
+                        <imageView width="1" alignment="left" image="damian-big" id="pO5-Q1-D3v"/>
+                        <label alignment="left" text="Height:" id="BbZ-i5-Auq"/>
+                        <label width="1" alignment="left" text="Height" textAlignment="center" id="Jrl-mA-5IH"/>
+                        <label alignment="left" text="Weight:" id="2e6-3R-czi"/>
+                        <label width="1" alignment="left" text="Weight" textAlignment="center" id="jtt-2h-B5d"/>
+                        <label alignment="left" text="Hometown:" id="Jog-2r-EDp"/>
+                        <label width="1" alignment="left" text="Hometown" textAlignment="center" id="nt6-vg-S0A"/>
+                        <map width="1" height="100" alignment="left" id="ndm-gP-wYy"/>
+                    </items>
+                    <connections>
+                        <outlet property="playerDetailHeight" destination="Jrl-mA-5IH" id="XNC-Gv-TNH"/>
+                        <outlet property="playerDetailHometown" destination="nt6-vg-S0A" id="wjR-Fu-QdI"/>
+                        <outlet property="playerDetailImage" destination="pO5-Q1-D3v" id="WLa-VI-2Gg"/>
+                        <outlet property="playerDetailWeight" destination="jtt-2h-B5d" id="eTz-ip-JjM"/>
+                        <outlet property="playerMap" destination="ndm-gP-wYy" id="QLE-gL-hg7"/>
+                        <outlet property="playerNameLabel" destination="l60-Tu-RoW" id="qKp-Z5-Oxa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="457" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

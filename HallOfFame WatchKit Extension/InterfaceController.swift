@@ -11,8 +11,10 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    
+    
     @IBOutlet var playerTable: WKInterfaceTable!
+    var players : [BasketballPlayer] = []
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -21,20 +23,26 @@ class InterfaceController: WKInterfaceController {
         damian.height = "6' 3\""
         damian.weight = 194
         damian.homeTown = "Los Angeles"
+        damian.circleImageName = "damian.png"
+        damian.bigImageName = "damian-big.png"
         
         var sheed = BasketballPlayer()
         sheed.name = "Rasheed Wallace"
         sheed.height = "7' 0\""
         sheed.weight = 229
-        sheed.homeTown = "Los Angeles"
+        sheed.homeTown = "Chicago"
+        sheed.circleImageName = "rasheed.png"
+        sheed.bigImageName = "rasheed-big.png"
         
         var jimmer = BasketballPlayer()
         jimmer.name = "Jimmer Fredette"
         jimmer.height = "6' 2\""
         jimmer.weight = 194
-        jimmer.homeTown = "Los Angeles"
+        jimmer.homeTown = "Atlanta"
+        jimmer.circleImageName = "jimmer.png"
+        jimmer.bigImageName = "jimmer-big.png"
         
-        var players = [damian, sheed, jimmer]
+        self.players = [damian, sheed, jimmer]
         // table needs to answer two questions
         // number of rows:
         self.playerTable.setNumberOfRows(players.count, withRowType: "PlayerRow")
@@ -43,11 +51,21 @@ class InterfaceController: WKInterfaceController {
         
         for player in players {
             var row = self.playerTable.rowController(at: index) as! PlayerRowController
-            row.playerNameLabel.setText(String(players[index].weight) + ":" + player.height)
+            row.playerNameLabel.setText(String(player.name))
+            var circleImage = UIImage(named: player.circleImageName)
+            row.playerImage.setImage(circleImage)
             index += 1
         }
     }
     
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        print("row \(rowIndex)")
+        print("player count \(players.count)")
+        var player = self.players[rowIndex]
+        print("player is \(player.name)")
+        self.pushController(withName: "PlayerDetailController", context: player)
+        
+    }
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()

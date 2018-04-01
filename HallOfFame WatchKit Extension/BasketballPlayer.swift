@@ -13,5 +13,8 @@ class BasketballPlayer: NSObject {
     var height = ""
     var weight = 0
     var homeTown = ""
+    var circleImageName = ""
+    var bigImageName = ""
+    
     
 }
